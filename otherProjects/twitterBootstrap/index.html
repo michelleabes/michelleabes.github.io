@@ -11,88 +11,133 @@
 </head>
 
 <body>
-
     <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse">
 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a href="#" class="navbar-brand">PANDA
+            <div class="col-sm-6 col-lg-4">
+ <span class="glyphicon glyphicon-home"></span></div></a>
+
+                <!-- Content used for toggling -->
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Images</a></li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Menu <b class="caret"></b></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="#">Pictures of Pandas</a></li>
+                                <li><a href="#">About Pandas</a></li>
+                                <li><a href="#">Adopt a Panda</a></li>
+                                <li><a href="#">Save the Pandas</a></li>
+
+                                <li class="divider"></li>
+                                <li><a href="#">Pandas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form role="search" class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search" class="form-control">
+                        </div>
+                    </form>
+                </div>
+        </nav>
+
+        <!-- Jumpotron at top of page -->
         <div class="row">
-            <div class="col-sm-4 col-lg-2 bg-primary">
+            <div class="col-xs-12">
+                <div class="jumbotron visible-lg-block">
+                    <h1>PANDAS</h1>
 
-              <img src="images/panda-2.jpg" class="img-rounded" alt="Panda">
-
-            </div>
-            <div class="col-sm-4 col-lg-2 bg-primary">
-
-              <div class="media">
-                  <div class="media-left">
-                      <a href="#">
-                          <img src="images/panda-icon.jpg" class="media-object" alt="Panda">
-                      </a>
-                  </div>
-                  <div class="media-body">
-                      <h4 class="media-heading">ILOVEPANDAS <small><i>Posted on January 10, 2014</i></small></h4>
-                      <p>Pandas are the best, I love pandas, go pandas!</p>
-                  </div>
-              </div>
-
-            </div>
-
-            <div class="clearfix visible-sm-block"></div>
-            <div class="col-sm-4 col-lg-2 bg-primary">
-                Ut porttitor fermentum magna, ac consectetur erat aliquam a. Integer sodales odio
-                sit amet nibh interdum interdum. Vestibulum ante ipsum primis in
-                faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam justo
-                libero, consectetur quis sodales at, commodo hendrerit orci. Maecenas
-                eu dolor ac tellus vestibulum condimentum. Sed eu faucibus nunc,
-                at pulvinar ex. Proin auctor, est sit amet rhoncus dignissim, diam
-                leo luctus massa, id aliquet libero mi ac enim. Curabitur feugiat
-                at justo a sodales.
-            </div>
-
-            <div class="clearfix visible-md-block"></div>
-            <div class="col-sm-4 col-lg-2 bg-warning">
-                Sed porttitor molestie nulla at blandit. Aliquam in augue sagittis, finibus nunc
-                a, interdum lectus. Aliquam ac iaculis sem, quis rhoncus leo. Aliquam
-                quam sapien, pulvinar auctor libero non, blandit hendrerit lacus.
-                Pellentesque in accumsan orci, id auctor lorem. Phasellus eget scelerisque
-                ex. Aliquam tincidunt felis a malesuada ultricies. Vivamus in scelerisque
-                elit, non rhoncus purus. Vestibulum quis diam ut turpis auctor placerat.
-                Sed porttitor sed felis id congue. Vestibulum id leo lectus
-            </div>
-
-            <div class="clearfix visible-sm-block"></div>
-            <div class="col-sm-4 col-lg-2 bg-info">
-                Duis mattis, leo id sagittis cursus, diam libero euismod nisi, nec auctor mi purus
-                sit amet metus. Phasellus porttitor et dui eu suscipit. Curabitur
-                aliquet malesuada nibh, ut aliquam lacus congue a. Cras ornare sed
-                nisl ac maximus. Quisque nibh lectus, ultricies consequat augue in,
-                gravida luctus eros. Sed vitae elit accumsan, molestie tortor eu,
-                elementum quam. Nam congue accumsan erat ut congue. Aenean ultrices
-                imperdiet blandit. Ut hendrerit ornare quam sit amet volutpat. Integer
-                orci urna, vehicula a ante tincidunt, condimentum dictum turpis.
-                Donec rhoncus nunc a egestas tincidunt. Aenean lacinia venenatis
-                nunc, at condimentum ex eleifend non. Donec eleifend sagittis felis.
-                Quisque pulvinar justo vel ligula bibendum, et porttitor ante vestibulum.
-                Sed eu placerat nisi, ut faucibus augue. Curabitur malesuada ex felis,
-                eu luctus elit ornare et.
-            </div>
-
-            <div class="col-sm-4 col-lg-2 bg-success">
-                Duis mattis, leo id sagittis cursus, diam libero euismod nisi, nec auctor mi purus
-                sit amet metus. Phasellus porttitor et dui eu suscipit. Curabitur
-                aliquet malesuada nibh, ut aliquam lacus congue a. Cras ornare sed
-                nisl ac maximus. Quisque nibh lectus, ultricies consequat augue in,
-                gravida luctus eros. Sed vitae elit accumsan, molestie tortor eu,
-                elementum quam. Nam congue accumsan erat ut congue. Aenean ultrices
-                imperdiet blandit. Ut hendrerit ornare quam sit amet volutpat. Integer
-                orci urna, vehicula a ante tincidunt, condimentum dictum turpis.
-                Donec rhoncus nunc a egestas tincidunt. Aenean lacinia venenatis
-                nunc, at condimentum ex eleifend non. Donec eleifend sagittis felis.
-                Quisque pulvinar justo vel ligula bibendum, et porttitor ante vestibulum.
-                Sed eu placerat nisi, ut faucibus augue. Curabitur malesuada ex felis,
-                eu luctus elit ornare et.
+                </div>
             </div>
         </div>
 
+
+
+        <div class="col-sm-4 col-lg-6">
+            <!-- Image of panda on tree -->
+            <img class="img-responsive img-circle" src="images/tree-panda.jpg" class="img-responsive img-circle" alt="Circular Image">
+        </div>
+
+        <div class="col-sm-4 col-lg-6">
+            <!-- Media object on page -->
+            <div class="media">
+                <div class="media-body">
+                    <h4 class="media-heading"> Panda Lover <medium><i>Posted on January 13 2016</i></medium></h4>
+                    <p>Thank you for providing a place to share the passion and love for Pandas, keep working forward to help
+                        save Pandas!</p>
+                </div>
+                <div class="media-right">
+                    <a href="#">
+                        <img src="images/panda-3.jpeg" width="100" class="media-object img-circle" alt="Panda">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-lg-6">
+            <!-- Start of Icons -->
+            <span class="glyphicon glyphicon-fire"></span>
+            <span class="glyphicon glyphicon-heart"></span>
+            <span class="glyphicon glyphicon-leaf"></span>
+            <span class="glyphicon glyphicon-eye-open"></span>
+            <span class="glyphicon glyphicon-plane"></span>
+            <span class="glyphicon glyphicon-globe"></span>
+
+        </div>
+
+        <div class="col-sm-4 col-lg-6">
+            <!-- Start of badges -->
+            <span class="badge">Pandas</span> <span class="badge">Are</span> <span class="badge">Life</span>
+        </div>
+
+        <div class="col-sm-4 col-lg-6">
+            <!-- Start of Panels-->
+            <div class="panel panel-default">
+                <div class="panel-heading">Help Save the Pandas</div>
+                <div class="panel-body">If you are interested in saving the Pandas<br> <a href="#">Click here</a> to donate!</div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-body">WWF Save the Pandas</div>
+            <div class="panel-footer clearfix">
+                <div class="pull-right">
+                    <button type="button" class="btn btn-default btn-xs">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Start of Progress Bars -->
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-primary" style="width: 80%">
+                <span class="sr-only">Weekly goal for money donated!</span>
+            </div>
+        </div>
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-info" style="width: 90%">
+                <span class="sr-only">Monthly goal for money donated!</span>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
     </div>
 </body>
 

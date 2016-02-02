@@ -1,0 +1,45 @@
+<pre>
+
+var userAge = prompt(“Please enter your age”);
+
+// There was only one "=" meaning userAge had a value of 0 rather than being compared to 0.
+  if (userAge == 0)
+// There should not be a semicolon after the if statement.
+  {
+
+    alert(“So you’re a baby!”);
+  }
+  else if ( userAge < 0 | userAge > 200)
+    alert(“I think you may be lying about your age”);
+  else
+  {
+    alert(“That’s a good age”);
+  }
+
+<script type=”text/javascript”>
+function writeTimesTable(timesTable, timesByStart, timesByEnd)
+
+{
+  // use this loop to calculate 1 * 12 up to 12 * 12
+for (;timesByStart <= timesByEnd; timesByStart++) {
+  // Results are shown on the page with the following code:
+document.write(timesTable + “ * “ + timesByStart + “ = “ + timesByStart * timesTable + “<br />”);
+} }
+
+// Changes are made between question 2, 3 and 4:
+var timesTable;
+// This will return a value that is compared to -1
+  while ( (timesTable = prompt(“Enter the times table”,-1)) != -1) {
+    // This will check to see that the value entered by the user is an actual number.
+    while (isNaN(timesTable) == true) {
+timesTable = prompt(timesTable + “ is not a valid number, please retry”,-1); }
+// Checks to see if -1 has been entered.
+if (timesTable == -1) {
+  break; }
+
+document.write(“<br />The “ + timesTable + “ times table<br />”); writeTimesTable(timesTable,1,12);
+}
+</script>
+
+
+</pre>

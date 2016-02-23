@@ -152,7 +152,7 @@
 
                       $("#q4button").on("click", function() {
 
-                        var userInput = prompt("Write more than one "B" and I will tell you how many you typed.");
+                        var userInput = prompt("Write more than one 'B' and I will tell you how many there are.");
                         var x = countBs(userInput);
 
                         $("#q4result").html(x);
@@ -184,7 +184,7 @@
                 $("#q5button").on("click", function() {
 
                   var inputOne = prompt("Write a sentence.");
-                  var inputTwo = prompt("What letter would you like me to count to?")
+                  var inputTwo = prompt("What letter would you like me to count?")
 
                   var t = countChar(inputOne, inputTwo)
                   $("#q5result").html(t);
@@ -283,7 +283,7 @@
 
         $("#q4button").on("click", function() {
 
-          var userInput = prompt("Write more than one "B" and I will tell you how many you typed.");
+          var userInput = prompt("Write more than one 'B' and I will tell you how many there are.");
           var x = countBs(userInput);
 
           $("#q4result").html(x);
@@ -301,7 +301,7 @@
         $("#q5button").on("click", function() {
 
           var inputOne = prompt("Write a sentence.");
-          var inputTwo = prompt("What letter would you like me to count to?")
+          var inputTwo = prompt("What letter would you like me to count?")
 
           var t = countChar(inputOne, inputTwo)
           $("#q5result").html(t);

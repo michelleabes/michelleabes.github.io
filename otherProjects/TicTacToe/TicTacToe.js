@@ -112,8 +112,8 @@ $(document).ready(function() {
     for (var i = 0; i < mulitArr.length; i++) { //The length of the multidimensional array is provided by the nested loop
       playerWon = true;
       for (var j = 0; j < mulitArr[i].length; j++) {
-        if (!$("#board").find("div").eq(mulitArr[i][j]).find("span").hasClass(circleOrEx)) { //Explain this condition
-          playerWon = false;
+        if (!$("#board").find("div").eq(mulitArr[i][j]).find("span").hasClass(circleOrEx)) { //This conditon is for when there is no winner during the game
+          playerWon = false; // false = no winner
         }
       }
 

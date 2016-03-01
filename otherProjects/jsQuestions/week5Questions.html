@@ -452,10 +452,10 @@
       }
       $("#q5button").on("click", function() {
 
-        var inputOne = prompt("Type out a sentance!");
-        var inputTwo = prompt("What letter would you like to count?")
+        var inputOne = prompt("Type out a sentance!"); // first prompt message
+        var inputTwo = prompt("What letter would you like to count?") // second prompt message
 
-        var t = countChar(inputOne, inputTwo)
+        var t = countChar(inputOne, inputTwo) // where user inserts answer
         $("#q5result").html(t);
       });
 

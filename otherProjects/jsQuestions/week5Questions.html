@@ -360,8 +360,8 @@
 
         var str = "";
 
-        for (var i = 1; i < 6; i++) {
-          for (var j = 1; j <= i; j++) {
+        for (var i = 1; i < 6; i++) { // the checkers will start at 1 and go up to 5
+          for (var j = 1; j <= i; j++) { // the chekers will go up by one each time
             str = str + "#";
           }
           str = str + "<br/>";
@@ -396,13 +396,13 @@
       });
 
       function chessBoard() {
-        // opens prompt window for user to determine a length
+        // prompt window for user to determine a length
         var size = prompt("Please enter a number to determine its length!");
         var line = '';
         var print = "";
         var i = 0;
 
-        for (i = 0; i < size / 2; i++) {
+        for (i = 0; i < size / 2; i++) { //
           line = print + line + '# ';
         }
 

@@ -46,6 +46,26 @@ $(document).ready(function() {
 
   $("#myButton").on("click", function() {
 
+    var userOrder = {};
+
+    userOrder.myInput = $("#mySingleLineText").val();
+    userOrder.myTextarea = $("#myTextarea").val();
+    userOrder.mySelect = $("#mySelect").val();
+    userOrder.myRadio = $("[name = 'gender']:checked").val();
+    userOrder.myCheckValues = [];
+
+    $("[name='vehicle']:checked").each(function() {
+      userOrder.myCheckValues.push($(this).val());
+    });
+
+    $("#log").append("<br>User clicked the button");
+    $("#log").append("<br>Value of input is: " + userOrder.myInput);
+    $("#log").append("<br>Value of the textarea is: " + userOrder.myTextarea);
+    $("#log").append("<br>Value of select is: " + userOrder.mySelect);
+    $("#log").append("<br>Value of checks is: " + userOrder.myCheckValues.join());
+    $("#log").append("<br><br>Value of userOrder is: " +JSON.stringify(userOrder));
+
+/*
     var myInput = $("#mySingleLineText").val();
     var myTextarea = $("#myTextarea").val();
     var mySelect = $("#mySelect").val();
@@ -57,11 +77,15 @@ $(document).ready(function() {
       myCheckValues.push($(this).val());
     });
 
+
+
     $("#log").append("<br>User clicked the button");
-    $("#log").append("<br>Value of input is: " + myInput);
-    $("#log").append("<br>Value of the textarea is: " + myTextarea);
-    $("#log").append("<br>Value of select is: " + mySelect);
-    $("#log").append("<br>Value of checks is: " + myCheckValues.join());
+    $("#log").append("<br>Value of input is: " +myInput);
+    $("#log").append("<br>Value of the textarea is: " +myTextarea);
+    $("#log").append("<br>Value of select is: " +mySelect);
+    $("#log").append("<br>Value of checks is: " +myCheckValues.join());
+
+*/
 
 
   });

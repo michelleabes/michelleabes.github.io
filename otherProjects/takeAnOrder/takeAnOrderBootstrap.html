@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Take an Order: Bootstrap HTML</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Take an Order: Bootstrap HTML</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<div class="container">
+  <div class="container">
     <div class="row">
-        <div class="col-md-12"><!--input-->
-          <input id="mySingleLineText" class="form-control" type="text" value="Type here">
+      <div class="col-md-3"></div> <!-- centers the text box -->
+      <div class="col-md-6">
+        <!--input-->
+        <br>
+        <input id="mySingleLineText" class="form-control" type="text" value="Type here">
+        <br>
+      </div>
+    <div class="col-md-3"></div> <!-- centers the text box -->
+  </div>
+
+<div class="row">
+      <div class="col-md-6">
+        <!-- textarea -->
+        <textarea id="myTextarea" class="form-control" rows="10" cols="50">Write something here</textarea>
+      </div>
+
+      <div class="col-md-6">
+        <!-- select -->
+        <select id="mySelect" class="form-control">
+          <option value="value1">Value 1</option>
+          <option value="value2" selected>Value 2</option>
+          <option value="value3">Value 3</option>
+        </select>
+      </div>
+      <div id="mySelectMessage"></div>
+
+      <div class="col-md-12">
+        <!-- radio -->
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="male" checked> Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="female" checked> Female
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="other" checked> Other
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- checkbox -->
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+          </label>
         </div>
 
-        <div class="col-md-12"> <!-- textarea -->
-            <textarea id="myTextarea" class="form-control" rows="10" cols="50">Write something here</textarea>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="vehicle" value="Car"> I have a car
+          </label>
         </div>
+      </div>
 
-        <div class="col-md-12"><!-- select -->
-          <select id="mySelect" class="form-control">
-            <option value="value1">Value 1</option>
-            <option value="value2" selected>Value 2</option>
-            <option value="value3">Value 3</option>
-          </select>
-        </div>
-          <div id="mySelectMessage"></div>
+      <div class="col-md-6">
+        <!-- button -->
+        <button class="btn btn-default" id="myButton" type="button">Click Me!</button>
+      </div>
 
-        <div class="col-md-12"><!-- radio -->
-          <div class="radio">
-            <label>
-              <input type="radio" name="gender" value="male" checked>
-              Male
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="gender" value="female" checked>
-              Female
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="gender" value="other" checked>
-              Other
-            </label>
-          </div>
-
-        <div class="col-md-12"><!-- checkbox -->
-
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="vehicle" value="Bike">
-              I have a bike
-            </label>
-          </div>
-
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="vehicle" value="Car">
-              I have a car
-            </label>
-          </div>
-        </div>
-
-        <div class="col-md-12"><!-- button -->
-          <button class="btn btn-default" id="myButton" type="button">Click Me!</button>
-        </div>
-
-        <div class="col-md-12"><!-- Log -->
-          <div id="log">Log</div>
+      <div class="col-md-6">
+        <!-- Log -->
+        <div id="log">Log</div>
+      </div>
     </div>
-</div>
+  </div>
 
-<script src="js/takeAnOrder.js"></script>
+  <script src="js/takeAnOrder.js"></script>
 </body>
+
 </html>

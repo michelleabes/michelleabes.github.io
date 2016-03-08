@@ -46,6 +46,7 @@ $(document).ready(function() {
 
   $("#myButton").on("click", function() {
 
+    // The more efficient way of writing the code (userOrder)
     var userOrder = {};
 
     userOrder.myInput = $("#mySingleLineText").val();
@@ -63,29 +64,29 @@ $(document).ready(function() {
     $("#log").append("<br>Value of the textarea is: " + userOrder.myTextarea);
     $("#log").append("<br>Value of select is: " + userOrder.mySelect);
     $("#log").append("<br>Value of checks is: " + userOrder.myCheckValues.join());
-    $("#log").append("<br><br>Value of userOrder is: " +JSON.stringify(userOrder));
+    $("#log").append("<br><br>Value of userOrder is: " + JSON.stringify(userOrder));
 
-/*
-    var myInput = $("#mySingleLineText").val();
-    var myTextarea = $("#myTextarea").val();
-    var mySelect = $("#mySelect").val();
-    var myRadio = $("[name = 'gender']:checked").val();
+    /*
+        var myInput = $("#mySingleLineText").val();
+        var myTextarea = $("#myTextarea").val();
+        var mySelect = $("#mySelect").val();
+        var myRadio = $("[name = 'gender']:checked").val();
 
-    var myCheckValues = [];
-    //each is a jquery loop for objects/arrays
-    $("[name='vehicle']:checked").each(function() {
-      myCheckValues.push($(this).val());
-    });
+        var myCheckValues = [];
+        //each is a jquery loop for objects/arrays
+        $("[name='vehicle']:checked").each(function() {
+          myCheckValues.push($(this).val());
+        });
 
 
 
-    $("#log").append("<br>User clicked the button");
-    $("#log").append("<br>Value of input is: " +myInput);
-    $("#log").append("<br>Value of the textarea is: " +myTextarea);
-    $("#log").append("<br>Value of select is: " +mySelect);
-    $("#log").append("<br>Value of checks is: " +myCheckValues.join());
+        $("#log").append("<br>User clicked the button");
+        $("#log").append("<br>Value of input is: " +myInput);
+        $("#log").append("<br>Value of the textarea is: " +myTextarea);
+        $("#log").append("<br>Value of select is: " +mySelect);
+        $("#log").append("<br>Value of checks is: " +myCheckValues.join());
 
-*/
+    */
 
 
   });

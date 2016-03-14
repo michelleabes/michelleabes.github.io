@@ -28,18 +28,18 @@ $(document).ready(function() {
   $("#mySelect").on("change", function() {
     $("#log").append("<br>input change");
     var val = $(this).val();
-    $("#mySelectMessage").html(val + " is a nice selection!")
+    $("#mySelectMessage").html(val + " times the coziness!")
   });
 
   // Mouse Enter - Mouse Leave
   $("#myButton").on("mouseenter", function() {
     $("#log").append("<br>Button mouseenter");
-    $(this).text("ORDER NOW!!!");
+    $(this).text("SO COZY!");
   })
 
   .on("mouseleave", function() {
     $("#log").append("<br>Button mouseleave");
-    $(this).text("Click Me!");
+    $(this).text("Place Order!");
   });
 
 
@@ -52,10 +52,10 @@ $(document).ready(function() {
     userOrder.myInput = $("#mySingleLineText").val();
     userOrder.myTextarea = $("#myTextarea").val();
     userOrder.mySelect = $("#mySelect").val();
-    userOrder.myRadio = $("[name = 'gender']:checked").val();
+    userOrder.myRadio = $("[name = 'scent']:checked").val();
     userOrder.myCheckValues = [];
 
-    $("[name='vehicle']:checked").each(function() {
+    $("[name='wick']:checked").each(function() {
       userOrder.myCheckValues.push($(this).val());
     });
 
@@ -64,6 +64,8 @@ $(document).ready(function() {
     $("#log").append("<br>Value of the textarea is: " + userOrder.myTextarea);
     $("#log").append("<br>Value of select is: " + userOrder.mySelect);
     $("#log").append("<br>Value of checks is: " + userOrder.myCheckValues.join());
+    $("#log").append("<br>Value of radio is: " + userOrder.myRadio);
+    $("#log").append("<br>Your order is being processed!");
     $("#log").append("<br><br>Value of userOrder is: " + JSON.stringify(userOrder));
 
     /*

@@ -15,7 +15,7 @@ $(document).ready(function() {
       "</tr>";
 
     })
-    
+
       html += "</table>";
       $("#data").append(html);
 

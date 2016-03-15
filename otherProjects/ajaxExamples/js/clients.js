@@ -1,8 +1,8 @@
-$(document).ready(function(){
+
 
   alert("working");
 
-});
+
 
 /* $.getJSON("someFolder/someFile.json", function (data) {
 

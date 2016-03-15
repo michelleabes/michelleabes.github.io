@@ -1,4 +1,9 @@
-$.getJSON("someFolder/someFile.json", function (data) {
+$(document).ready(function(){
+  alert("working");
+
+});
+
+/* $.getJSON("someFolder/someFile.json", function (data) {
 
 $(document).ready(function () {
 
@@ -14,4 +19,4 @@ $.each(data, function (index, item) {
     	$("#musicDiv").append(html);
 
 	});
-});
+}); */

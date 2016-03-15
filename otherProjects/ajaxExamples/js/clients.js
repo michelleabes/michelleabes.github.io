@@ -13,14 +13,13 @@ $(document).ready(function() {
       "<td>" + item.email + "</td>" +
       "<td>" + item.company + "</td>" +
       "</tr>";
-
+})
       html += "</table>";
       $("#data").append(html);
 
-    })
 
     // alert(data);
-    console.dir(data);
+    //console.dir(data);
     //  $("#data").append(item.name)
 
   })

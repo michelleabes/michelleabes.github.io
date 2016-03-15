@@ -1,13 +1,15 @@
-$(document).ready(function(){
-  $("#getClients").on("click", function(){
+$(document).ready(function() {
+  $("#getClients").on("click", function() {
 
-    alert("working");
+  $.getJSON("http://michelleabes.github.io/otherProjects/ajaxExamples/clients.html", function(data){
+
+    alert(data);
+    console.dir(data);
+  })
 
 
   })
 });
-
-
 
 
 /* $.getJSON("someFolder/someFile.json", function (data) {

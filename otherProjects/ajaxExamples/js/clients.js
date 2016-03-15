@@ -4,8 +4,12 @@ $(document).ready(function() {
 
   $.getJSON("http://michelleabes.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json", function(data) {
 
-    alert(data);
-    console.dir(data);
+    $.each(data, function (index, item){
+      $("#data").append(item.name)
+
+    })
+    // alert(data);
+    // console.dir(data);
 
   })
 

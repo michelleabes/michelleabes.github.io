@@ -12,7 +12,7 @@ function writeTimesTable(timesTable, timesByStart, timesByEnd){
     }
 }
 var timesTable;
-    
+
     // if the user puts in -1 this message will appear.
     while ( (timesTable = prompt('Enter the times table',-1)) != -1) {
     while (isNaN(timesTable) === true) {
@@ -22,7 +22,7 @@ var timesTable;
 
     break;
         }
-        
+
         // equation for if the user puts in number 1 to 12
  document.write('<br />The' + timesTable + 'times table' + '<br/>');
  writeTimesTable(timesTable,1,12);
@@ -31,5 +31,8 @@ var timesTable;
 </script>
 
 </body>
+
+<script src="http://michelleabes.github.io/js/getnav.js"></script>
+
 
 </html>

@@ -4,10 +4,15 @@ $(document).ready(function() {
 
   $.getJSON("http://michelleabes.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json", function(data) {
 
-    var html= "<table>" + "<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
+    var html= "<table class='table table-hover table-striped'>" + "<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
 
     $.each(data, function (index, item){
-      $("#data").append(item.name)
+
+      html += "<tr>" +
+      "<td>"+item.name+"</td>" +
+      "<td>"+item.email+"</td>" +
+      "<td>"+item.company"+</td>" +
+      "</tr>";
 
       html += "</table>";
       $("#data").append(html);
@@ -16,6 +21,7 @@ $(document).ready(function() {
 
     // alert(data);
     // console.dir(data);
+    //  $("#data").append(item.name)
 
   })
 

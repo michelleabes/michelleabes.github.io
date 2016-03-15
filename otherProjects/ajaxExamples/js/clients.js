@@ -20,7 +20,7 @@ $(document).ready(function() {
     })
 
     // alert(data);
-    // console.dir(data);
+    console.dir(data);
     //  $("#data").append(item.name)
 
   })

@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $("#getClients").on("click", function() {
 
-  $.getJSON("http://michelleabes.github.io/otherProjects/ajaxExamples/clients.html", function(data) {
+  $.getJSON("http://michelleabes.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json", function(data) {
 
     alert(data);
     console.dir(data);

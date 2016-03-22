@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-  alert("!");
-  //$.getJSON
+  $.getJSON("", function(data){
 
+    console.dir(data);
+
+  })
 })

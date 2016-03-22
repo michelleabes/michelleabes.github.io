@@ -33,7 +33,7 @@ $(document).ready(function() {
             }
 
             html += '</div>' +
-            '</div>'; //end stars
+              '</div>'; //end stars
           }) //each comment
 
         html += '</div>' + //commentsContainer

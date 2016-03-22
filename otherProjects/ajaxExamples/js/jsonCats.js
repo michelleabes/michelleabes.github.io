@@ -11,11 +11,16 @@ $(document).ready(function() {
           '<div class="catType"><small>type: </small>' + item.type + '</div>' +
           '<div class="catGender"><small>gender: </small>' + item.gender + '</div>' +
           '<img class="catImage" src= "' + item.image + '"/>' +
-          '<div class="commentsContainer">';
+          // '<div class="commentsContainer">';
+          // deleted commentsContainer
+          '<div class="panel panel-default">' + //added
+          '<div class="panel panel-heading"> Renter Comments </div>' //added
         $.each(item.comments, function(ind, i) {
-            html += '<div class="renterName"> ' + i.username + '</div>' +
+            html += '<div class = "panel-body">' + //added
+              '<div class="renterName"> ' + i.username + '</div>' +
               '<div class="renterComment">' + i.comment + '</div>' +
               '<div class="renterStars">';
+
 
             var numStars = Number(i.stars);
 
@@ -27,7 +32,8 @@ $(document).ready(function() {
               }
             }
 
-            html += '</div>'; //end stars
+            html += '</div>' +
+            '</div>'; //end stars
           }) //each comment
 
         html += '</div>' + //commentsContainer

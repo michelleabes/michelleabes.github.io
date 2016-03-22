@@ -1,20 +1,27 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $.getJSON("jsonDatabase/jsonCats.json", function(data){
+  $.getJSON("jsonDatabase/jsonCats.json", function(data) {
 
     console.dir(data);
-    var html ="";
+    var html = "";
 
     $.each(data, function(index, item) {
-      html += '<div class="col-md-4">' +
-        '<div class="catName">' + item.name + '</div>' +
-        '<div class="catType">' + item.type + '</div>' +
-        '<div class="catGender">' + item.gender + '</div>' +
-        '<img src= "' + item.image + '"/>';
+        html += '<div class="col-md-4">' +
+          '<div class="catName">' + item.name + '</div>' +
+          '<div class="catType">' + item.type + '</div>' +
+          '<div class="catGender">' + item.gender + '</div>' +
+          '<img src= "' + item.image + '"/>' +
+          '<div class="commentsContainer">';
+        $.each(item.comment, function(ind, i) {
+            html += '<div class="renterName"> ' + i.username + '</div>' +
+              '<div class="renterLocation">' + i.comment + '</div>';
 
-      html += '</div>';
+          }) //each comment
 
-    }) //each cat
+        html += '</div>' + //commentsContainer
+          '</div>'; //col-md-4
+
+      }) //each cat
     $("#catData").append(html);
   })
 })

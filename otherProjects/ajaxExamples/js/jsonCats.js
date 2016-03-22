@@ -7,8 +7,8 @@ $(document).ready(function(){
 
     $.each(data, function(index, item) {
       html += '<div class="col-md-4">' +
-        '<div class="catName">' + item.type + '</div>' +
-        '<div class="catType">' + item.name + '</div>' +
+        '<div class="catName">' + item.name + '</div>' +
+        '<div class="catType">' + item.type + '</div>' +
         '<div class="catGender">' + item.gender + '</div>' +
         '<img src= "' + item.image + '"/>';
 

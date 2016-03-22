@@ -12,9 +12,9 @@ $(document).ready(function() {
           '<div class="catGender">' + item.gender + '</div>' +
           '<img src= "' + item.image + '"/>' +
           '<div class="commentsContainer">';
-        $.each(item.comment, function(ind, i) {
+        $.each(item.comments, function(ind, i) {
             html += '<div class="renterName"> ' + i.username + '</div>' +
-              '<div class="renterLocation">' + i.comment + '</div>';
+              '<div class="renterComment">' + i.comment + '</div>';
 
           }) //each comment
 

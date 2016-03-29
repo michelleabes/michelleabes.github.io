@@ -2,17 +2,17 @@ $(document).ready(function() {
 
   $("#getClients").on("click", function() {
 
-  $.getJSON("http://michelleabes.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json", function(data) {
+  $.getJSON("http://michelleabes.github.io/otherProjects/ajaxExamples/jsonDatabase/dogs.json", function(data) {
 
-    var html= "<table class='table table-hover table-striped'>" + "<tr><th>Name</th><th>Email</th><th>Company</th></tr>";
+    var html= "<table class='table table-hover table-striped'>" + "<tr><th>Breed</th><th>Age</th><th>Weight</th></tr>";
 
     $.each(data, function(index, item){
 
-      html += "<tr>" +
-      "<td>" + item.name + "</td>" +
-      "<td>" + item.email + "</td>" +
-      "<td>" + item.company + "</td>" +
-      "</tr>";
+      html += "<ol>" +
+      "<li>" + item.breed + "</li>" +
+      "<li>" + item.age + "</li>" +
+      "<li>" + item.weight + "</li>" +
+      "</ol>";
 
     })
 

@@ -1,0 +1,66 @@
+[{
+  "type": "Calico",
+  "name": "Paws",
+  "gender": "Male",
+  "image": "images/cat1.jpg",
+  "comments": [{
+
+    "username": "AboveAlpha",
+    "stars": 5,
+    "comment": "So CUTE I could die"
+
+  }, {
+    "username": "BrashTaga",
+    "stars": 3,
+    "comment": "Destroyed my house"
+
+  }, {
+    "username": "Dragonakon",
+    "stars": 4,
+    "comment": "Best cat I have ever had"
+  }]
+
+}, {
+  "type": "Tabby",
+  "name": "Mittens",
+  "gender": "Female",
+  "image": "images/cat2.jpg",
+  "comments": [{
+
+    "username": "Jubeamese",
+    "stars": 1,
+    "comment": "The worst, DO NOT adopt"
+
+  }, {
+    "username": "Pearbrai",
+    "stars": 3,
+    "comment": "She was aight, cow didn't come with cat"
+
+  }, {
+    "username": "PeachPrincess",
+    "stars": 5,
+    "comment": "So Fluffy, reminded me of my old cat"
+  }]
+
+}, {
+  "type": "Siamese",
+  "name": "Robert",
+  "gender": "Unspecified",
+  "image": "images/cat3.jpg",
+  "comments": [{
+
+    "username": "WordtotheWord",
+    "stars": 2,
+    "comment": "Word"
+
+  }, {
+    "username": "Roadbed",
+    "stars": 4,
+    "comment": "Loved this cat..."
+
+  }, {
+    "username": "Inconaler",
+    "stars": 1,
+    "comment": "Hated it"
+  }]
+}]

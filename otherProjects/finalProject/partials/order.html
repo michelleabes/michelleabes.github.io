@@ -1,0 +1,144 @@
+<body>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-12">
+
+        <!-- title of page -->
+        <h1>Cozy Candles</h1>
+
+      </div>
+
+
+      <div class="col-md-4">
+        <!-- radio -->
+        <!-- targets the cupcake candle -->
+        <div class="radio">
+          <!-- image of candle included -->
+          <img id="about" class="me" src="images/cupcake.jpg" alt="Candle" />
+          <br>
+          <label>
+            <input type="radio" name="scent" value="Cupcake" checked> Cupcake
+          </label>
+        </div>
+
+        <!-- options for customer to chose 1 wick or 2 wick -->
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="wick" value="1-wick"> 1 Wick - $15.99
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="wick" value="2-wick"> 2 Wick - $25.99
+          </label>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <!-- radio -->
+        <!-- targets the Dougnut candle -->
+        <div class="radio">
+          <!-- image of candle included -->
+          <img id="about" class="me" src="images/doughnut.jpg" alt="Candle" />
+          <br>
+          <label>
+            <input type="radio" name="scent" value="Doughnut" checked> Doughnut
+          </label>
+        </div>
+
+        <!-- options for customer to chose 1 wick or 2 wick -->
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="wick" value="1-wick"> 1 Wick - $15.99
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="wick" value="2-wick"> 2 Wick - $25.99
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <!-- radio -->
+        <!-- targets the sorbet candle -->
+        <div class="radio">
+          <!-- image of candle included -->
+          <img id="about" class="me" src="images/sorbet.jpg" alt="Candle" />
+          <br>
+          <label>
+            <input type="radio" name="scent" value="Sorbet" checked> Sorbet
+          </label>
+        </div>
+        <!-- options for customer to chose 1 wick or 2 wick -->
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="wick" value="1-wick"> 1 Wick - $15.99
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="wick" value="2-wick"> 2 Wick - $25.99
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <br>
+        <br>
+        <div>
+          <!-- textbox for customer to include suggestion on candle scents -->
+          <textarea id="myTextarea" class="form-control" rows="10" cols="50">Any suggestions on candle scents? Input them here!</textarea>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <br>
+        <!-- select -->
+        <!-- user inputs the number of candles they would like to purchase -->
+        <!-- styles the width of the dropdown menu to be smaller -->
+        <div style="width: 100px">
+          <p>Quanitity:</p>
+          <select id="mySelect" class="form-control">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <!-- message displayed after customer changes number of candles being purchased -->
+          <div id="mySelectMessage"></div>
+
+        </div>
+        <br>
+
+        <div>
+          <!-- Customer can include email to be updates on new candle scents -->
+          <p>Be the first to know about new scents:</p>
+
+          <input id="mySingleLineText" class="form-control" type="text" value="Enter your email address">
+          <br>
+        </div>
+        <br>
+        <div>
+          <button class="btn btn-default" id="myButton" type="button">Place Order!</button>
+        </div>
+        <br>
+        <div id="log">Log</div>
+      </div>
+
+    </div>
+
+    <footer class="row footer">
+     	<p class="text-muted rowMargins">Place sticky footer content here.</p>
+    </footer>
+
+  </div>
+
+  <script src="js/takeAnOrder.js"></script>
+
+</body>

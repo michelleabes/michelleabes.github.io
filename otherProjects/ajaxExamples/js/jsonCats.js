@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     $.each(data, function(index, item) {
         html += '<div class="col-md-4">' +
-          '<div class="catName"><small>name: </small>' + item.name + '</div>' +
+          '<div class="catName"><small></small>' + item.name + '</div>' +
           '<div class="catType"><small>type: </small>' + item.type + '</div>' +
           '<div class="catGender"><small>gender: </small>' + item.gender + '</div>' +
           '<img class="catImage" src= "' + item.image + '"/>' +

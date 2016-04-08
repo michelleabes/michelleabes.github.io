@@ -4,10 +4,14 @@
 
 .catName{
   text-decoration: underline;
-  background: rgba(249, 203, 185, 0.3);
+  background:rgba(0, 86, 255, 0.2);
   font-size: 20px;
   text-align: center;
 
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: rgba(0, 86, 255, 0.2);;
 }
 
 small{
@@ -20,14 +24,22 @@ h1{
   text-align: center;
   text-decoration: underline;
   font-family: cursive;
+  margin-bottom: 40px;
+}
+
+h2{
+  font-size:20px;
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
 }
 
 body{
-  background-color: #ffffe6;
+  background-color: #fff4f8;
 }
 
 .carousel{
-    background: #2f0008;
+    background: rgba(0, 86, 255, 0.2);
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */

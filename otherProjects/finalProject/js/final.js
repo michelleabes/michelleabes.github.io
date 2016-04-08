@@ -32,7 +32,7 @@ $(document).ready(function() {
                 html += '<div class="col-xs-12 col-md-4 jsonCats">' +
                   '<div class="catName">' + item.name + '</div>' +
                   '<div class="catType"><small>type </small>' + item.type + '</div>' +
-                  '<div class="catGender"><small>gender </small>' + item.gender + '</div>' +
+                  '<div class="catGender"><small>price </small>' + item.gender + '</div>' +
                   '<img class="catImage" src="' + item.image + '"/>' +
                   //deleted commentsContainer
                   '<div class="panel panel-default">' + //added
@@ -111,7 +111,7 @@ $(document).ready(function() {
       $("#successMsg").html("Order Received!<br/><br/>" +
         order.catSelect + " will be delivered on " +
         order.startRentDate +
-        "<img id='Cupcake' src='images/cupcake.jpg'>");
+        "<img id='Cupcake' src='images/Money-back.gif'>");
 
     } //sendConfirmation
 

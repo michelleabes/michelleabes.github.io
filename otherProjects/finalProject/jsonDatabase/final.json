@@ -7,56 +7,56 @@
 
     "username": "AboveAlpha",
     "stars": 5,
-    "comment": "So CUTE I could die"
+    "comment": "This scent was really nice"
 
   }, {
     "username": "BrashTaga",
     "stars": 3,
-    "comment": "Destroyed my house"
+    "comment": "Not as strong of a scent as I had hoped"
 
   }, {
     "username": "Dragonakon",
     "stars": 4,
-    "comment": "Best cat I have ever had"
+    "comment": "Bought this for my mom and she loved it!"
   }]
 
 }, {
-  "type": "Tabby",
-  "name": "Mittens",
-  "gender": "Female",
+  "type": "3 Wick",
+  "name": "Cinnamon Sugared Cupacake",
+  "gender": "$25.99",
   "image": "images/doughnut.jpg",
   "comments": [{
 
     "username": "Jubeamese",
     "stars": 1,
-    "comment": "The worst, DO NOT adopt"
+    "comment": "Smells horrible!"
 
   }, {
     "username": "Pearbrai",
     "stars": 3,
-    "comment": "She was aight, cow didn't come with cat"
+    "comment": "Was really excited about this scent but it was not what I had hoped"
 
   }, {
     "username": "PeachPrincess",
     "stars": 5,
-    "comment": "So Fluffy, reminded me of my old cat"
+    "comment": "Sooooooooo good!"
   }]
 
 }, {
-  "type": "Siamese",
-  "name": "Robert",
-  "gender": "Unspecified",
+  "type": "3 Wick",
+  "name": "Strawberry Sorbet",
+  "gender": "$25.99",
   "image": "images/sorbet.jpg",
   "comments": [{
 
     "username": "WordtotheWord",
     "stars": 2,
-    "comment": "Word"
+    "comment": "Smelt terrible!"
 
   }, {
     "username": "Roadbed",
     "stars": 4,
-    "comment": "Loved this cat..."
+    "comment": "Went back and bought two more!"
 
   }, {
     "username": "Inconaler",

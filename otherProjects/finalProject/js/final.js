@@ -111,7 +111,7 @@ $(document).ready(function() {
       $("#successMsg").html("Order Received!<br/><br/>" +
         order.catSelect + " will be delivered on " +
         order.startRentDate +
-        "<img id='paws' src='images/catPaws.jpeg'>");
+        "<img id='Cupcake' src='images/cupcake.jpg'>");
 
     } //sendConfirmation
 

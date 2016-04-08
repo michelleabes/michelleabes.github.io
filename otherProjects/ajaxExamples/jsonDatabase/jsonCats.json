@@ -1,8 +1,8 @@
 [{
-  "type": "Frosted Cupcake",
-  "name": "3 Wick",
-  "gender": "$25.99",
-  "image": "images/cupcake.jpg",
+  "type": "Calico",
+  "name": "Paws",
+  "gender": "Male",
+  "image": "images/cat1.jpg",
   "comments": [{
 
     "username": "AboveAlpha",
@@ -24,7 +24,7 @@
   "type": "Tabby",
   "name": "Mittens",
   "gender": "Female",
-  "image": "images/doughnut.jpg",
+  "image": "images/cat2.jpg",
   "comments": [{
 
     "username": "Jubeamese",
@@ -46,7 +46,7 @@
   "type": "Siamese",
   "name": "Robert",
   "gender": "Unspecified",
-  "image": "images/sorbet.jpg",
+  "image": "images/cat3.jpg",
   "comments": [{
 
     "username": "WordtotheWord",

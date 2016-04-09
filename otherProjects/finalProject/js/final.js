@@ -46,9 +46,9 @@ $(document).ready(function() {
                     for (var j = 1; j <= 5; j++) {
 
                       if (j <= i.stars) {
-                        html += '<img src="images/fullStar.png"/>';
+                        html += '<img src="images/fullstar.png"/>';
                       } else {
-                        html += '<img src="images/emptyStar.png"/>';
+                        html += '<img src="images/emptystar.png"/>';
                       }
                     }
                     html += '</div>' + //end stars

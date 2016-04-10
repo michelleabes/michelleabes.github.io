@@ -14,6 +14,18 @@ $(document).ready(function() {
 
       }) //click
 
+      // Changes the "Name" background to yellow when focused on
+      $("#mySingleLineText").on("focus", function() {
+        $(".name").append("<br>input focus");
+        $(this).css("background-color", "#FDD7E4");
+      })
+
+      // Changes the "Name" background back to white
+      .on("blur", function() {
+        $(".name").append("<br>input blur");
+        $(this).css("background-color", "#FFF");
+      });
+
     //get the parital via JSON, add to page, activiate associating js
     function getPartial(partial) {
 
@@ -60,18 +72,6 @@ $(document).ready(function() {
               }) //each cat
 
             $("#pageContent").html(html);
-
-            // Changes the "Name" background to yellow when focused on
-            $("#mySingleLineText").on("focus", function() {
-              $(".name").append("<br>input focus");
-              $(this).css("background-color", "#FDD7E4");
-            })
-
-            // Changes the "Name" background back to white
-            .on("blur", function() {
-              $(".name").append("<br>input blur");
-              $(this).css("background-color", "#FFF");
-            });
 
           }) //getJSON
       } else if (partial == "orderPage") { //ajax get order.html

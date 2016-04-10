@@ -109,13 +109,13 @@ $(document).ready(function() {
       });
 
       // Mouse Enter - Mouse Leave
-      $("#submitButton").mouseenter(function() {
+      $("#submitButton").on("mouseenter", function() {
         // $("#log").append("<br>Button mouseenter");
         $(this).text("SO COZY!");
       })
 
-      $("#submitButton").mouseleave(function() {
-        // $("#log").append("<br>Button mouseleave");
+      .on("mouseleave", function() {
+        //$("#log").append("<br>Button mouseleave");
         $(this).text("Submit");
       });
 

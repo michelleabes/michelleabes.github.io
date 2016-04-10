@@ -93,11 +93,7 @@ $(document).ready(function() {
               }) //click
           }) //get
       }
-
-      function showDiv() {
-   document.getElementById('.alert alert-danger').style.display = "block";
-    }
-
+      
       $("#pageContent").fadeIn();
 
     }

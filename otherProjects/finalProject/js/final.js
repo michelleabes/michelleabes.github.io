@@ -1,5 +1,28 @@
 $(document).ready(function() {
 
+  // Changes the "name" background to pink when focused on
+  $("#securityCode").on("focus", function() {
+    //$("#log").append("<br>input focus");
+    $(this).css("background-color", "#fff4f8");
+  })
+
+  // Changes the "name" background back to white
+  .on("blur", function() {
+    //$("#log").append("<br>input blur");
+    $(this).css("background-color", "#FFF");
+  });
+
+  // Mouse Enter - Mouse Leave
+  $("#submitButton").on("mouseenter", function() {
+    //$("#log").append("<br>Button mouseenter");
+    $(this).text("SO COZY!");
+  })
+
+  .on("mouseleave", function() {
+    //$("#log").append("<br>Button mouseleave");
+    $(this).text("Place Order!");
+  });
+
     //get all the nav li, add click event
     $(".nav").find("li").on("click", function() {
         $("#pageContent").hide().html("");
@@ -13,29 +36,6 @@ $(document).ready(function() {
         getPartial(page);
 
       }) //click
-
-      // Changes the "name" background to pink when focused on
-      $("#securityCode").on("focus", function() {
-        //$("#log").append("<br>input focus");
-        $(this).css("background-color", "#fff4f8");
-      })
-
-      // Changes the "name" background back to white
-      .on("blur", function() {
-        //$("#log").append("<br>input blur");
-        $(this).css("background-color", "#FFF");
-      });
-
-      // Mouse Enter - Mouse Leave
-      $("#submitButton").on("mouseenter", function() {
-        //$("#log").append("<br>Button mouseenter");
-        $(this).text("SO COZY!");
-      })
-
-      .on("mouseleave", function() {
-        //$("#log").append("<br>Button mouseleave");
-        $(this).text("Place Order!");
-      });
 
     //get the parital via JSON, add to page, activiate associating js
     function getPartial(partial) {

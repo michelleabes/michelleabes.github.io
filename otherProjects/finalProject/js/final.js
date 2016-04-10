@@ -94,9 +94,9 @@ $(document).ready(function() {
               }) //click
 
               // Changes the "name" background to pink when focused on
-              $("#cardNumber").on("focus", function() {
+              $("#securityCode").on("focus", function() {
                 // $("#log").append("<br>input focus");
-                $(this).css("background-color", "#fff4f8");
+                $(this).css("background-color", "#dbc9ff");
               })
 
               // Changes the "name" background back to white
@@ -108,7 +108,7 @@ $(document).ready(function() {
               // Mouse Enter - Mouse Leave
               $("#submitButton").on("mouseenter", function() {
                 // $("#log").append("<br>Button mouseenter");
-                $(this).text("SO COZY!");
+                $(this).text("So Cozy!");
               })
 
               .on("mouseleave", function() {

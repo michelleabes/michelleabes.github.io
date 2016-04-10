@@ -96,32 +96,33 @@ $(document).ready(function() {
           }) //get
       }
 
+      // Changes the "name" background to pink when focused on
+      $("#cardNumber").on("focus", function() {
+        $("#log").append("<br>input focus");
+        $(this).css("background-color", "#fff4f8");
+      })
+
+      // Changes the "name" background back to white
+      .on("blur", function() {
+        $("#log").append("<br>input blur");
+        $(this).css("background-color", "#FFF");
+      });
+
+      // Mouse Enter - Mouse Leave
+      $("#submitButton").on("mouseenter", function() {
+        $("#log").append("<br>Button mouseenter");
+        $(this).text("SO COZY!");
+      })
+
+      .on("mouseleave", function() {
+        $("#log").append("<br>Button mouseleave");
+        $(this).text("Submit");
+      });
+
       $("#pageContent").fadeIn();
 
     }
 
-    // Changes the "name" background to pink when focused on
-    $("#cardNumber").on("focus", function() {
-      $("#log").append("<br>input focus");
-      $(this).css("background-color", "#fff4f8");
-    })
-
-    // Changes the "name" background back to white
-    .on("blur", function() {
-      $("#log").append("<br>input blur");
-      $(this).css("background-color", "#FFF");
-    });
-
-    // Mouse Enter - Mouse Leave
-    $("#submitButton").on("mouseenter", function() {
-      $("#log").append("<br>Button mouseenter");
-      $(this).text("SO COZY!");
-    })
-
-    .on("mouseleave", function() {
-      $("#log").append("<br>Button mouseleave");
-      $(this).text("Submit");
-    });
 
     function sendConfirmation() {
       //make an object to record data for database;

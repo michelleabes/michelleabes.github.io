@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   // Changes the "type here" background back to white
   .on("blur", function() {
-    $("#log").append("<br>input blur");
+    // $("#log").append("<br>input blur");
     $(this).css("background-color", "#FFF");
   });
 

@@ -2,7 +2,7 @@
 
 .catImage {
   width: 100%;
-  border: rgba(0, 86, 255, 0.2);
+  border: 3px solid rgba(0, 86, 255, 0.2);;
 }
 
 .catName{
@@ -10,6 +10,7 @@
   background:rgba(0, 86, 255, 0.2);
   font-size: 20px;
   text-align: center;
+  text-transform: uppercase;
 
 }
 
@@ -27,18 +28,28 @@ h1{
   text-align: center;
   text-decoration: underline;
   font-family: "lobster";
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 h2{
   font-size:20px;
   text-align: center;
   font-family: "roboto";
+  text-decoration:underline;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 body{
   background-color: #fff4f8;
+}
+
+p{
+  margin: 50px;
+  margin-top: 0px;
+  font-family: "roboto";
+  text-align: center;
+  font-size: 18px;
 }
 
 .text-success {
@@ -59,17 +70,12 @@ body{
 	 margin: 20px;
 }
 
-.panel-heading{
-  background-color: rgba(0, 86, 255, 0.5);
-}
-
 .panel-body{
   background-color: rgba(0, 86, 255, 0.2);
 }
 
-
 #submitButton {
   margin-top: 20px;
   text-align: center;
-
+  background: rgba(0, 86, 255, 0.5);
 }

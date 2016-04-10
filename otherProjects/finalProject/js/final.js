@@ -78,7 +78,6 @@ $(document).ready(function() {
                   return !this.value;
                 }).closest("div").addClass("has-error");
 
-
                 //remove error class for non empty ones
                 $("input, select").filter(function() {
                   return this.value; //removed !
@@ -93,28 +92,28 @@ $(document).ready(function() {
 
               }) //click
 
-              // Changes the "name" background to pink when focused on
-              $("#securityCode").on("focus", function() {
-                // $("#log").append("<br>input focus");
-                $(this).css("background-color", "#dbc9ff");
-              })
+            // Changes the "CVV" background to pink when focused on
+            $("#securityCode").on("focus", function() {
+              // $("#log").append("<br>input focus");
+              $(this).css("background-color", "#dbc9ff");
+            })
 
-              // Changes the "name" background back to white
-              .on("blur", function() {
-                // $("#log").append("<br>input blur");
-                $(this).css("background-color", "#FFF");
-              });
+            // Changes the "CVV" background back to white
+            .on("blur", function() {
+              // $("#log").append("<br>input blur");
+              $(this).css("background-color", "#FFF");
+            });
 
-              // Mouse Enter - Mouse Leave
-              $("#submitButton").on("mouseenter", function() {
-                // $("#log").append("<br>Button mouseenter");
-                $(this).text("So Cozy!");
-              })
+            // Mouse Enter - Mouse Leave
+            $("#submitButton").on("mouseenter", function() {
+              // $("#log").append("<br>Button mouseenter");
+              $(this).text("So Cozy!");
+            })
 
-              .on("mouseleave", function() {
-                //$("#log").append("<br>Button mouseleave");
-                $(this).text("Submit");
-              });
+            .on("mouseleave", function() {
+              //$("#log").append("<br>Button mouseleave");
+              $(this).text("Submit");
+            });
 
 
           }) //get

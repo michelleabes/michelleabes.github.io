@@ -16,24 +16,24 @@ $(document).ready(function() {
 
     // Changes the "Name" background to pink when focused on
     $("#name").on("focus", function() {
-      $("#successMsg").append("<br>input focus");
+      // $("#successMsg").append("<br>input focus");
       $(this).css("background-color", "#FDD7E4");
     })
 
     // Changes the "Name" background back to white
     .on("blur", function() {
-      $("#successMsg").append("<br>input blur");
+      // $("#successMsg").append("<br>input blur");
       $(this).css("background-color", "#FFF");
     });
 
     // Mouse Enter - Mouse Leave
     $("#submitButton").on("mouseenter", function() {
-      $("#successMsg").append("<br>Button mouseenter");
+      // $("#successMsg").append("<br>Button mouseenter");
       $(this).text("SO COZY!");
     })
 
     .on("mouseleave", function() {
-      $("#successMsg").append("<br>Button mouseleave");
+      // $("#successMsg").append("<br>Button mouseleave");
       $(this).text("Submit");
     });
 

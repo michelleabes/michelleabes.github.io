@@ -14,15 +14,15 @@ $(document).ready(function() {
 
       }) //click
 
-      // Changes the "Name" background to yellow when focused on
+      // Changes the "Name" background to pink when focused on
       $("#name").on("focus", function() {
-        $("#submitButton").append("<br>input focus");
+        $("#log").append("<br>input focus");
         $(this).css("background-color", "#FDD7E4");
       })
 
       // Changes the "Name" background back to white
       .on("blur", function() {
-        $("#submitButton").append("<br>input blur");
+        $("#log").append("<br>input blur");
         $(this).css("background-color", "#FFF");
       });
 

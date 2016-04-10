@@ -14,8 +14,8 @@ $(document).ready(function() {
 
       }) //click
 
-      // Changes the "name" background to yellow when focused on
-      $("#name").on("focus", function() {
+      // Changes the "name" background to pink when focused on
+      $("#securityCode").on("focus", function() {
         //$("#log").append("<br>input focus");
         $(this).css("background-color", "#FDD7E4");
       })

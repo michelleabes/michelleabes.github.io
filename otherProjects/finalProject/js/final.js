@@ -74,10 +74,9 @@ $(document).ready(function() {
                 //get all empty inputs and select
                 //add error class to div container
 
-                alert("glyphicon glyphicon-exclamation-sign" +
-                  "Please fill out all fields")
-                  
                 $("input, select").filter(function() {
+                  alert("glyphicon glyphicon-exclamation-sign" +
+                    "Please fill out all fields")
                   return !this.value;
                 }).closest("div").addClass("has-error");
 

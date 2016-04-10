@@ -33,18 +33,6 @@
     <input type="text" id="name" class="form-control">
   </div>
 
-  <div class="col-xs-12 col-md-12">
-    <label class="control-label">
-      Card Type
-    </label>
-    <form action="">
-  <input type="radio" name="master" value="male"> Mastercard<br>
-  <input type="radio" name="master" value="female"> Visa<br>
-  <input type="radio" name="master" value="other"> Paypal
-</form>
-
-  </div>
-
   <div class="col-xs-12 col-md-8">
     <label class="control-label">
       Card Number
@@ -113,6 +101,17 @@
     </label>
     <input type="text" class="form-control" id="country">
   </div>
+
+  <div class="col-xs-12 col-md-12">
+    <label class="control-label">
+      Shipping Type
+    </label>
+    <form action="">
+  <input type="radio" name="ship" value="Free"> Free! - Standard (FedEx Canada) <br>
+  <input type="radio" name="ship" value="Express"> $20.00 - Express (FedEx Canada)<br>
+  <input type="radio" name="ship" value="Priority"> $30.00 - Priority (FedEx Canada)
+</form>
+</div>
 
   <div class="col-md-12">
     <button id="submitButton" class="btn btn-success">

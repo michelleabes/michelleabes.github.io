@@ -15,14 +15,14 @@ $(document).ready(function() {
       }) //click
 
       // Changes the "Name" background to yellow when focused on
-      $("#mySingleLineText").on("focus", function() {
-        $(".name").append("<br>input focus");
+      $("#name").on("focus", function() {
+        $("#submitButton").append("<br>input focus");
         $(this).css("background-color", "#FDD7E4");
       })
 
       // Changes the "Name" background back to white
       .on("blur", function() {
-        $(".name").append("<br>input blur");
+        $("#submitButton").append("<br>input blur");
         $(this).css("background-color", "#FFF");
       });
 

@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   .on("mouseleave", function() {
     //$("#log").append("<br>Button mouseleave");
-    $(this).text("Place Order!");
+    $(this).text("Submit");
   });
 
     //get all the nav li, add click event

@@ -26,6 +26,17 @@ $(document).ready(function() {
         $(this).css("background-color", "#FFF");
       });
 
+      // Mouse Enter - Mouse Leave
+      $("#submitButton").on("mouseenter", function() {
+        $("#successMsg").append("<br>Button mouseenter");
+        $(this).text("SO COZY!");
+      })
+
+      .on("mouseleave", function() {
+        $("#successMsg").append("<br>Button mouseleave");
+        $(this).text("Submit");
+      });
+
     //get the parital via JSON, add to page, activiate associating js
     function getPartial(partial) {
 

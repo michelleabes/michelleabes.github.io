@@ -77,6 +77,7 @@ $(document).ready(function() {
                   return !this.value;
                 }).closest("div").addClass("has-error");
 
+
                 //remove error class for non empty ones
                 $("input, select").filter(function() {
                   return this.value; //removed !
@@ -92,6 +93,11 @@ $(document).ready(function() {
               }) //click
           }) //get
       }
+
+      function showDiv() {
+   document.getElementById('.alert alert-danger').style.display = "block";
+    }
+
       $("#pageContent").fadeIn();
 
     }

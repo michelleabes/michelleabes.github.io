@@ -75,6 +75,8 @@ $(document).ready(function() {
                 //add error class to div container
                 $("input, select").filter(function() {
                   return !this.value;
+                  alert("glyphicon glyphicon-exclamation-sign" +
+                    "Please fill out all fields")
                 }).closest("div").addClass("has-error");
 
 
@@ -93,7 +95,7 @@ $(document).ready(function() {
               }) //click
           }) //get
       }
-      
+
       $("#pageContent").fadeIn();
 
     }

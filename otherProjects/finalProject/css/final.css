@@ -55,3 +55,8 @@ body{
 .bs-example{
 	 margin: 20px;
 }
+
+#submitButton {
+  margin-top: 30px;
+
+}

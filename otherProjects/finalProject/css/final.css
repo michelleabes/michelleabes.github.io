@@ -2,6 +2,7 @@
 
 .catImage {
   width: 100%;
+  border: rgba(0, 86, 255, 0.2);
 }
 
 .catName{
@@ -13,7 +14,7 @@
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-  background-color: rgba(0, 86, 255, 0.2);;
+  background-color: rgba(0, 86, 255, 0.2);
 }
 
 small{
@@ -49,12 +50,23 @@ body{
 .carousel{
     background: rgba(0, 86, 255, 0.2);
 }
+
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
 }
+
 .bs-example{
 	 margin: 20px;
 }
+
+.panel-heading{
+  background-color: rgba(0, 86, 255, 0.5);
+}
+
+.panel-body{
+  background-color: rgba(0, 86, 255, 0.2);
+}
+
 
 #submitButton {
   margin-top: 20px;

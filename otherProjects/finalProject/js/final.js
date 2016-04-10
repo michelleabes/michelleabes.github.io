@@ -76,8 +76,6 @@ $(document).ready(function() {
 
                 $("input, select").filter(function() {
                   return !this.value;
-                  alert("glyphicon glyphicon-exclamation-sign" +
-                    "Please fill out all fields")
                 }).closest("div").addClass("has-error");
 
 

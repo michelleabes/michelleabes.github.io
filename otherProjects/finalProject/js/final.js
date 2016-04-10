@@ -61,6 +61,18 @@ $(document).ready(function() {
 
             $("#pageContent").html(html);
 
+            // Changes the "type here" background to yellow when focused on
+            $("#mySingleLineText").on("focus", function() {
+              $("#name").append("<br>input focus");
+              $(this).css("background-color", "#FDD7E4");
+            })
+
+            // Changes the "type here" background back to white
+            .on("blur", function() {
+              $("#name").append("<br>input blur");
+              $(this).css("background-color", "#FFF");
+            });
+
           }) //getJSON
       } else if (partial == "orderPage") { //ajax get order.html
         $.get("partials/order2.html", function(data) {

@@ -74,6 +74,10 @@ p{
   background-color: rgba(0, 86, 255, 0.2);
 }
 
+.control-label{
+  margin-top: 10px;
+}
+
 #submitButton {
   margin-top: 20px;
   text-align: center;

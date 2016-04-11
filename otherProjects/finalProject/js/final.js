@@ -23,7 +23,7 @@ $(document).ready(function() {
           $('.carousel').carousel();
         })
       } else if (partial == "whatPage") { //ajax models.html
-        //paste the getJSON here; change the append id; change the file name
+        //get the getJSON file here
         $.getJSON("jsonDatabase/final.json", function(data) {
 
             var html = "";
@@ -94,24 +94,20 @@ $(document).ready(function() {
 
             // Changes the "CVV" background to pink when focused on
             $("#securityCode").on("focus", function() {
-              // $("#log").append("<br>input focus");
               $(this).css("background-color", "#dbc9ff");
             })
 
             // Changes the "CVV" background back to white
             .on("blur", function() {
-              // $("#log").append("<br>input blur");
               $(this).css("background-color", "#FFF");
             });
 
             // Mouse Enter - Mouse Leave
             $("#submitButton").on("mouseenter", function() {
-              // $("#log").append("<br>Button mouseenter");
               $(this).text("So Cozy!");
             })
 
             .on("mouseleave", function() {
-              //$("#log").append("<br>Button mouseleave");
               $(this).text("Submit");
             });
 

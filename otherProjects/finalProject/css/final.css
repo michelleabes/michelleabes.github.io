@@ -78,10 +78,10 @@ p{
 	 margin: 20px;
 }
 
+/* Styles the background of reviews */
 .panel-body{
-  background-color: red;
+  background-color: rgba(0, 86, 255, 0.2);
 }
- /* rgba(0, 86, 255, 0.2); */
 
 .control-label{
   margin-top: 10px;

@@ -66,6 +66,7 @@ p{
   margin-top: 5px;
 }
 
+/* Styles background in the carousel */
 .carousel{
     background: rgba(0, 86, 255, 0.2);
 }

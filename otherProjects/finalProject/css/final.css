@@ -79,8 +79,9 @@ p{
 }
 
 .panel-body{
-  background-color: rgba(0, 86, 255, 0.2);
+  background-color: red;
 }
+ /* rgba(0, 86, 255, 0.2); */
 
 .control-label{
   margin-top: 10px;
